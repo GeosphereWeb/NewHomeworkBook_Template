@@ -2,7 +2,7 @@
 
 Provide an introductory paragraph, describing:
 
-* What your project does
+* What your project does 
 * Why people should consider using your project
 * Link to project home page
 
