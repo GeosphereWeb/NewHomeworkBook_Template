@@ -29,7 +29,7 @@ Provide an introductory paragraph, describing:
 
 ## About the Project
 
-Here you can provide more details about the project
+Here you can provide more details about the project 
 * What features does your project provide?
 * Short motivation for the project? (Don't be too long winded)
 * Links to the project site
