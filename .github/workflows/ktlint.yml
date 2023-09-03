@@ -1,14 +1,15 @@
-name: klint
+name: ktlint
 
 on:
+  workflow_dispatch:
   pull_request:
     paths:
-      - .github/workflows/klint.yml
+      - .github/workflows/ktlint.yml
       - 'src/**/*.kt'
       - '**.kts'
 
 jobs:
-  klint:
+  ktlint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
