@@ -9,7 +9,7 @@ plugins {
 
 android {
     namespace = "de.geosphere.newhomeworkbook"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "de.geosphere.newhomeworkbook"
@@ -29,7 +29,7 @@ android {
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro",
+                "proguard-rules.pro"
             )
         }
     }
@@ -77,13 +77,16 @@ dependencies {
 
 ktlint {
     android.set(true)
-    outputColorName.set("RED")
-
-    version.set("0.50.0")
-    verbose.set(true)
+    ignoreFailures.set(false)
+//    outputColorName.set("RED")
+//
+//    version.set("0.50.0")
+//    verbose.set(true)
 
     reporters {
         reporter(ReporterType.CHECKSTYLE)
         reporter(ReporterType.JSON)
     }
 }
+
+tasks.getByPath("preBuild").dependsOn("ktlintFormat")
