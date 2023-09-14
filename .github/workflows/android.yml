@@ -17,7 +17,7 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: '11'
-#          distribution: 'temurin'
+          distribution: 'temurin'
           cache: gradle
       - run: echo "The workflow is now ready to test your code."
       - name: Grant execute permission for gradlew
